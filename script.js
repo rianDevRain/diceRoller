@@ -6,7 +6,7 @@ let showArrayList = document.querySelector("#showArray");
 
 let dieRolls = [];
 
-howManyBtn.addEventListener("click", function() {
+howManyBtn.addEventListener("click", () => {
   let dieNumber = Number(numberOfDie.value);
   if (isNaN(dieNumber)) {
     totalOfDice.innerHTML = `Please enter a number`;
@@ -22,7 +22,7 @@ howManyBtn.addEventListener("click", function() {
   }
 });
 
-showBtn.addEventListener("click", function () {
+showBtn.addEventListener("click", () => {
   showArrayList.innerHTML =
     "<ol>" + dieRolls.map(function (number) {
         return "<li>" + number + "</li>";
