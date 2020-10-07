@@ -10,7 +10,9 @@ const resetButton = document.querySelector("#reset");
 const formContainer = document.querySelector("#form");
 // declare the dieRolls array. Const can be mutated later
 const dieRolls = [];
-//Event listeners call functions below
+//Event listeners call functions below. Learning arrow functions
+// Took me a while to realize that let and const are not hoisted
+// Therefore I put the eventlisteners on the bottom after the fucntions
 
 // diceAdder takes the value from input and checks if it is a number
 //Then it generates a random number between 1-6 and pushes to array
