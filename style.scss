@@ -1,16 +1,16 @@
 /** @format */
 
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+
 html {
 	font-size: 1.7vw;
 	background-color: black;
-	background: url(./jonathan-petersson-W8V3G-Nk8FE-unsplash.jpg) center center / cover fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./jonathan-petersson-W8V3G-Nk8FE-unsplash.jpg) center center / cover fixed;
   color: rgba(183, 255, 89, 0.911);
   font-family: 'Luckiest Guy', cursive;
 }
-:root {
-	box-sizing: border-box;
-}
+
 span {
 	text-decoration: none;
 	a:link {
@@ -82,7 +82,7 @@ input {
 		grid-row: 1 / 2;
 	}
 	.btn {
-		border: 0.36em solid #aac1ff;
+		// border: 0.36em solid #aac1ff;
 		margin: 0 1em 1em 0;
 		box-sizing: border-box;
 		text-decoration: none;
@@ -94,12 +94,14 @@ input {
 		background-color: rgba(112, 9, 247, 0.377);
 		height: 50%;
 		border-radius: 10px;
+		box-shadow: 0px 8px 15px rgba(26, 255, 45, 0.452);
     cursor: pointer;
     font-family: 'Luckiest Guy', cursive;
     font-size: 1.5em;
 	}
 	.btn:hover {
     background-color: rgba(66, 2, 243, 0.562);
-    font-family: 'Luckiest Guy', cursive;
+	font-family: 'Luckiest Guy', cursive;
+	box-shadow: 0px 8px 15px rgba(26, 255, 45, 0.925);
 	}
 }

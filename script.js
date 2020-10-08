@@ -45,8 +45,7 @@ let diceAdder = () => {
 let arrayDisplay = () => {
 	showArrayList.innerHTML =
 		"<ol>" +
-		dieRolls
-			.map(function (number) {
+		dieRolls.map(function (number) {
 				return "<li>" + number + "</li>";
 			})
 			.join("") +
@@ -56,9 +55,10 @@ let arrayDisplay = () => {
 //Then resets all elements in html except for the input doesnt reset
 //See readme
 let resetLoop = () => {
-	while (dieRolls.length > 0) {
-		dieRolls.pop();
-	}
+	dieRolls = [];
+	// while (dieRolls.length > 0) {
+	// 	dieRolls.pop();
+	// }
 	totalOfDice.innerHTML = `Enter a new Number`;
 	formContainer.reset();
 	arrayDisplay();
