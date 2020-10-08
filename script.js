@@ -22,7 +22,7 @@ const dieRolls = [];
 let diceAdder = () => {
 	let howMany = Number(howManySides.value);
 	let dieNumber = Number(numberOfDie.value);
-	if (isNaN(dieNumber)) {
+	if (isNaN(dieNumber) || dieNumber == '', isNaN(howMany) || howMany == '') {
 		totalOfDice.innerHTML = `Please enter a number`;
 	} else {
 		let count = 0;

@@ -3,24 +3,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<title>Document</title>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./style.css" >
 	</head>
 	<body>
 		<div class="container">
 			<h2 class="title">Dice Roller Game</h2>
 			<form id="form">
-				<input type="text" id="numberOfDice" placeholder="How Many Dice" />
-				<input type="text" id="howManySide" placeholder="HowManySides">
+				<input type="text" id="numberOfDice" placeholder="How Many Dice" required >
+				<input type="text" id="howManySide" placeholder="HowManySides" value="6">
 			</form>
-			<button class="btn" id="submitDice">Roll The Dice</button>
+			<button class="btn" id="submitDice">Roll!</button>
 			<button class="btn" id="reset">reset</button>
 
 			<div class="totalDie" id="totalDie"></div>
-			<button class="btn" id="showAllBtn">Show Array in List</button>
-			<div class="total">List:</div>
+			<button class="btn" id="showAllBtn">Show All Rolls</button>
+			<div class="total">All Rolls:</div>
 			<div id="showArray"></div>
 		</div>
 		<span>Photo by <a href="https://unsplash.com/@grizzlybear?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Petersson</a> on <a href="https://unsplash.com/s/photos/dice?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
