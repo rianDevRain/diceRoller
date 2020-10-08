@@ -4,7 +4,7 @@ html {
   font-size: 1.7vw;
   background-color: black;
   background: url(./jonathan-petersson-W8V3G-Nk8FE-unsplash.jpg) center center/cover fixed;
-  color: rgba(224, 205, 255, 0.911);
+  color: rgba(183, 255, 89, 0.911);
   font-family: 'Luckiest Guy', cursive;
 }
 
@@ -18,17 +18,18 @@ span {
 
 span a:link {
   text-decoration: none;
-  color: #adc8fc;
+  color: rgba(183, 255, 89, 0.911);
 }
 
 input {
   width: 8rem;
   background-color: rgba(66, 2, 243, 0.562);
-  color: white;
+  color: rgba(183, 255, 89, 0.911);
   font-weight: bold;
   height: 50px;
-  box-shadow: inset 0 0 0 3px #d7c8ff 212, 204, 204;
+  box-shadow: inset 0 0 0 3px #b29bf1 212, 204, 204;
   border-radius: 10px;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .container {
@@ -99,10 +100,10 @@ input {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: #cfb5fa;
+  color: rgba(183, 255, 89, 0.911);
   text-align: center;
   transition: all 0.15s;
-  background-color: rgba(135, 207, 235, 0);
+  background-color: rgba(112, 9, 247, 0.377);
   height: 50%;
   border-radius: 10px;
   cursor: pointer;
