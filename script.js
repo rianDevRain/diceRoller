@@ -8,6 +8,7 @@ const showBtn = document.querySelector("#showAllBtn");
 const showArrayList = document.querySelector("#showArray");
 const resetButton = document.querySelector("#reset");
 const formContainer = document.querySelector("#form");
+const howManySides = document.querySelector("#howManySide");
 // declare the dieRolls array. Const can be mutated later
 const dieRolls = [];
 //Event listeners call functions below. Learning arrow functions
@@ -19,13 +20,14 @@ const dieRolls = [];
 //Then using reduce method and a add function adds each item of the
 //array and displays to html
 let diceAdder = () => {
+	let howMany = Number(howManySides.value);
 	let dieNumber = Number(numberOfDie.value);
 	if (isNaN(dieNumber)) {
 		totalOfDice.innerHTML = `Please enter a number`;
 	} else {
 		let count = 0;
 		while (count < dieNumber) {
-			dieRolls.push(Math.floor(Math.random() * 6) + 1);
+			dieRolls.push(Math.floor(Math.random() * howMany) + 1);
 			count++;
 		}
 		// Loops through each item in an array and adds each item to the total.
@@ -36,7 +38,7 @@ let diceAdder = () => {
 		// const = dieRolls.reduce(add);
 		totalOfDice.innerHTML = `The total dice is: ${sum}`;
 	}
-}
+};
 //This function uses the map() method to loop through each item and display
 //in html each die in an ordered list. Each loop it is writing the html
 //For each item in the array I understand there are
@@ -49,7 +51,7 @@ let arrayDisplay = () => {
 			})
 			.join("") +
 		"</ol>";
-}
+};
 //Tied to the reset button this will pop each item from the array
 //Then resets all elements in html except for the input doesnt reset
 //See readme
@@ -60,8 +62,7 @@ let resetLoop = () => {
 	totalOfDice.innerHTML = `Enter a new Number`;
 	formContainer.reset();
 	arrayDisplay();
-}
-
+};
 
 resetButton.addEventListener("click", resetLoop);
 howManyBtn.addEventListener("click", diceAdder);

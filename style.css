@@ -15,7 +15,7 @@ span {
 
 span a:link {
   text-decoration: none;
-  color: white;
+  color: #adc8fc;
 }
 
 input {
@@ -44,6 +44,8 @@ input {
 }
 
 .container #form {
+  display: grid;
+  gap: 5px;
   grid-column: 2 / 4;
   grid-row: 2 / 3;
   justify-items: stretch;
