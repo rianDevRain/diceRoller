@@ -1,8 +1,11 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 html {
   font-size: 1.7vw;
   background-color: black;
   background: url(./jonathan-petersson-W8V3G-Nk8FE-unsplash.jpg) center center/cover fixed;
   color: rgba(224, 205, 255, 0.911);
+  font-family: 'Luckiest Guy', cursive;
 }
 
 :root {
@@ -30,11 +33,16 @@ input {
 
 .container {
   display: grid;
-  grid-template-columns: 3rem 8rem 8rem 8rem 3rem;
+  grid-template-columns: auto 8rem 8rem 8rem 3rem;
   grid-template-rows: 100px 10em 10em;
   gap: 10px;
   justify-content: space-around;
   align-content: space-around;
+}
+
+.container .diceText {
+  grid-column: 1 /2;
+  grid-row: 2 /3;
 }
 
 .container .title {
@@ -90,7 +98,6 @@ input {
   box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Roboto',sans-serif;
   font-weight: bold;
   color: #cfb5fa;
   text-align: center;
@@ -99,9 +106,12 @@ input {
   height: 50%;
   border-radius: 10px;
   cursor: pointer;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.5em;
 }
 
 .container .btn:hover {
   background-color: rgba(66, 2, 243, 0.562);
+  font-family: 'Luckiest Guy', cursive;
 }
 /*# sourceMappingURL=style.css.map */
